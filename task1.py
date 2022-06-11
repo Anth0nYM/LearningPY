@@ -1,39 +1,33 @@
-import nltk
-from nltk.tokenize import RegexpTokenizer
-txt = '''Giants batem os Patriots no Super Bowl XLII Azarões acabam com a invencibilidade de New England e ficam com o título da temporada 04/02/2008 - 01h07m - Atualizado em 04/02/2008 - 09h49m
-         Com um passe de Eli Manning para Plaxico Burress a 39 segundos do fim, o New York Giants anotou o touchdown decisivo e derrubou o favorito New England Patriots por 17 a 14 neste domingo, em Glendale, no Super Bowl XLII. O resultado, uma das maiores zebras da história do Super Bowl, acabou com a temporada perfeita de Tom Brady e companhia, que esperavam fazer história ao levantar o troféu da NFL sem sofrer uma derrota no ano.
-         A vitória dos Giants, porém, também ficará para a história. Pela primeira vez, irmãos quarterbacks triunfam no Super Bowl em temporadas consecutivas. No ano passado, Peyton Manning, irmão de Eli, chegou ao título máximo da NFL pelo Indianapolis Colts.
-         A partida
-         Os Giants começaram com a posse de bola, e mostraram logo que iriam alongar ao máximo suas posses de bola. Misturando corridas com Brandon Jacobs e passes curtos, o time de Nova York chegou à red zone logo na primeira campanha. O avanço, no entanto, parou na linha de 17 jardas e Lawrence Tynes converteu o field goal de 32 jardas para abrir o placar.
-         Eli Manning e companhia ficaram 9m54s com a bola, mas o ataque dos Patriots não entrou em campo frio. Logo no retorno do kickoff, o running back Laurence Maroney avançou 43 jardas, deixando Tom Brady em boa posição. Com passes curtos, os Patriots chegaram à linha de 17 jardas e, graças a uma penalidade (interferência de passe) do linebacker Antonio Pierce, alcançaram a linha de uma jarda. Maroney avançou pelo chão e anotou o primeiro touchdown do jogo.
-         Os Giants pareciam rumo à virada na campanha seguinte. Manning achou Amani Toomer para um avanço de 38 jardas, e o time de Nova York entrou novamente na red zone. Com a bola na linha de 14 jardas dos Patriots, os Giants sofreram um revés. Manning passou para Steve Smith, que soltou a bola. Ellis Hobbs aproveitou, tomou a posse para os Patriots, e avançou 23 jardas. 
-         A defesa de Nova York manteve o jogo equilibrado. Com dois sacks seguidos, os Giants forçaram o punt e recuperaram a bola. Mas a campanha seguinte provou ser outra decepção para Nova York. O time chegou à linha de 25 jardas, mas Manning sofreu um sack e cometeu um fumble, e o ataque voltou para a linha de 39 jardas, não conseguindo pontuar mais uma vez.
-         Os Patriots tiveram uma última chance de marcar antes do intervalo, mas, a 22 segundos do fim do segundo período, Brady foi novamente sacado. Desta vez, ele cometeu o fumble e os Giants tomaram a posse de bola. Manning tentou um passe longo, de 50 jardas, nos últimos segundos, mas não teve sucesso. 
-         O jogo continuou amarrado no terceiro quarto, com as defesas levando a melhor sobre os ataques. A única chance de pontuar do período foi dos Patriots, que chegaram à linha de 31 jardas dos Giants. O técnico Bill Bellichick, porém, optou por uma quarta descida em vez de um field goal. Brady tentou um passe para Jabar Gaffney, mas não conseguiu completar.
-         O último período começou arrasador para os Giants. na primeira jogada, Manning achou o tight end Kevin Boss, para um incrível avanço de 45 jardas, que deixou o time na linha de 35 dos Patriots. Outro lançamento, desta vez para Steve Smith, marcou o avanço até a linha de 12 jardas. Duas jogadas depois, David Tyree pegou um passe de cinco jardas na end zone para anotar o touchdown e virar o jogo.
-         Na hora da decisão, o ataque dos Patriots voltou a funcionar. Com uma série de passes curtos e variados, Brady achou Wes Welker, Randy Moss e Kevin Faulk seguidas vezes até chegar à red zone. A 2m45s do fim, o quarterback conectou mais uma vez com Moss, que se desmarcou e ficou livre na lateral direita da end zone.
-         Quando os fãs de New England já comemoravam a vitória, o inesperado aconteceu. Em uma jogada incrível, Eli Manning se soltou de dois marcadores que o seguravam pela camisa e, na corrida, lançou para Amani Toomer. O wide receiver, bem marcado, saltou e conseguiu a fazer recepção para um avanço de 32 jardas, deixando os Giants na linha de 24 de New England.
-         Quatro jogadas depois, a 39 segundos do fim, Manning achou Plaxico Burress na end zone para conseguir o touchdown do título.
-    '''
-tokenizer = RegexpTokenizer(r'\w+')
-texttok = tokenizer.tokenize(txt)
-typetxt = set(texttok)
-'''def orderedSequentialSearch(alist, item):
-    pos = 0
-    found = False
-    stop = False
-    while pos < len(alist) and not found and not stop:
-        if alist[pos] == item:
-            found = True
-        else:
-            if alist[pos] != item:
-                stop = True
-            else:
-                pos = pos+1
+##Printar apenas as palavras que começam com a letra s.
+st = 'Print only the words that start with s in this sentence'
+'''for i in st.split():
+    if i[0] == 's':
+        print(i)
+        '''
+##Todos os pares de 0 a 10. 
+'''pares = [i for i in range(0,11) if i % 2 == 0] 
+print(pares)      '''
 
-    return found
-'''
-print(texttok)
-print(texttok.count('a'))
-#print(orderedSequentialSearch(texttok, 'Giants'))
-#print(orderedSequentialSearch(texttok, '39'))
+##Criar uma lista de todos os números entre 1 e 50 que são divisíveis por 3.
+'''numlist = [i for i in range(1,51) if i % 3 == 0]
+print(numlist)'''
+
+##Percorra a string st e se o comprimento de uma palavra for par imprima "é par!"
+'''st = 'Print every word in this sentence that has an even number of letters'
+for i in st.split():
+    if len(i) % 2 == 0:
+        print(i, 'é par!')'''
+##Imprima os números inteiros de 1 a 100. Para múltiplos de três imprima "Fizz" ao ivés do número, e para os múltiplos de cinco imprima "Buzz". Para números que são múltiplos de três e cinco imprima "FizzBuzz".
+'''for i in range(0,101):
+    if i % 3 == 0 and i % 5 == 0:
+        print('FizzBuzz')
+    elif i % 3 == 0:
+        print('Fizz')
+    elif i % 5 == 0:
+        print('Buzz')
+    else:
+        print(i)'''
+##Criar uma lista das primeiras letras de cada palavra na string abaixo:
+'''st = 'Create a list of the first letters of every word in this string'
+lista = [i[0] for i in st.split()]
+print(lista)'''

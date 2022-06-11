@@ -12,7 +12,7 @@ with open('corpus_teste.txt', 'r',encoding='utf-8') as f:
         print(a,smile, 'ocurrences in the corpus') 
 print('USING REGEX')
 txtbeta = 'k Olha kk que kkk coisa kkkk mais linda,kkkkkkkkkk mais cheia de graça. É ela menina quem vem e que passa, num doce balanço a caminho do mar '
-laught1 = re.findall("^lol$|^ah$|^eh$|^hi$", txt.lower())
+laught1 = re.findall(" lol | ah | eh | hi ", txt.lower())
 laught2 = re.findall('kk+kk|haha+ha|rs+rs|hue+hue|aush+aush|ahu+ahu', txt.lower())
 expre1 = re.findall('sim', txt.lower())
 expre2 = re.findall('seria', txt.lower())
