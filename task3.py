@@ -1,9 +1,20 @@
-import re
-txt = 'medonho sua atitude medosca'
-result1 = re.search(' medo ',txt,)
-result2 = re.search(' #medo ',txt,)
-result3 = re.search(' medo! ',txt,)
-if result1 or result2 or result3 != None:
-    print('Medo encontrado no seu tweet')
-else:
-    print('Não há medo no seu tweet')
+# Abstraindo um Cilindro como uma classe
+from cairo import Surface
+
+
+class Cylinder(object):
+    pi = 3.14159265358979323846
+    def __init__(self, height=1, radius=2):
+        self.height = height
+        self.radius = radius
+
+    def volume(self):
+        volume = self.pi * self.radius**2 * self.height
+        return(volume)
+
+    def surface_area(self):
+        area = self.pi * self.radius**2 
+        return(area)
+cilindro = Cylinder(9,5)
+print('o volume do cilindro é {:.2f}'.format(cilindro.volume()))
+print('A área do cilindro é {:.2f}'.format(cilindro.surface_area()))
