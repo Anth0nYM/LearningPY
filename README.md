@@ -1,3 +1,2 @@
-# Proagrupar
-ESSE REPOSITÓRIO NÃO REPRESENTA O RESULTADO FINAL 
-repositório criado apenas para fins de aprendizado, vou deixar aqui todas mini tarefas que me são pedidas no projeto.
+# Learning...
+Não gosto de programar para nada, então estou mantendo esse repositório para commitar pequenos exercícios do meu dia a dia.
