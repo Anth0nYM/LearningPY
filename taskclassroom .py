@@ -41,28 +41,34 @@ def fahrenheit(T):
     return ((float(9)/5)*T + 32)
 def celsius(T):
     return (float(5)/9)*(T-32)
+
+def mapteste():
     
-temp = [0, 22.5, 40,100]
+    temp = [0, 22.5, 40,100]
 
-F_temps = list(map(fahrenheit, temp))
+    F_temps = list(map(fahrenheit, temp))
 
-# Converte devolta
-list(map(celsius, F_temps))
+    # Converte devolta
+    list(map(celsius, F_temps))
 
-# Combinando Map com lamdba
-list(map(lambda x: (5.0/9)*(x - 32), F_temps))
+    # Combinando Map com lamdba
+    list(map(lambda x: (5.0/9)*(x - 32), F_temps))
 
-#map com vários argumentos
-a = [1,2,3,4]
-b = [5,6,7,8]
-c = [9,10,11,12]
+    #map com vários argumentos
+    a = [1,2,3,4]
+    b = [5,6,7,8]
+    c = [9,10,11,12]
 
-list(map(lambda x,y:x+y,a,b))
+    list(map(lambda x,y:x+y,a,b))
 
-list(map(lambda x,y,z:x+y+z, a,b,c))
-
-
-lst =[47,11,42,13]
-anth = functools.reduce(lambda x,y: x+y,lst)
-print(anth)
+    list(map(lambda x,y,z:x+y+z, a,b,c))
+def reduceteste():
+    lst =[47,11,42,13]
+    anth = functools.reduce(lambda x,y: x+y,lst)
+    print(anth)
+    
+def filterteste():
+    lista = [i for i in range(101)]
+    a = list(filter(lambda x: x%2==0, lista))
+    print(a)
 
