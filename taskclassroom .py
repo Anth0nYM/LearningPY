@@ -1,3 +1,4 @@
+import functools
 #Calcular o volume de uma esfera dado seu raio.
 from calendar import c
 
@@ -59,3 +60,9 @@ c = [9,10,11,12]
 list(map(lambda x,y:x+y,a,b))
 
 list(map(lambda x,y,z:x+y+z, a,b,c))
+
+
+lst =[47,11,42,13]
+anth = functools.reduce(lambda x,y: x+y,lst)
+print(anth)
+
