@@ -71,4 +71,27 @@ def filterteste():
     lista = [i for i in range(101)]
     a = list(filter(lambda x: x%2==0, lista))
     print(a)
+    
+def zipteste():
+    lista = [i for i in range(1,101)]
+    lista2 = [i for i in range(101,201)]
+    a = list(zip(lista,lista2))
+    return a
+
+#zip em dicionários
+d1 = {'a':1,'b':2,'c':3}
+d2 = {'d':4,'e':5,'f':6}
+def zipemdict():
+    a = list(zip(d1.values(),d2.values()))
+    return a
+
+def switcharoo(d1,d2):
+    dout = {}
+    
+    for d1key,d2val in zip(d1,d2.values()):
+        dout[d1key] = d2val
+    
+    return dout
+print(switcharoo(d1,d2))
+
 
