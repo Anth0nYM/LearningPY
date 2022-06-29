@@ -64,8 +64,7 @@ def mapteste():
     list(map(lambda x,y,z:x+y+z, a,b,c))
 def reduceteste():
     lst =[47,11,42,13]
-    anth = functools.reduce(lambda x,y: x+y,lst)
-    print(anth)
+    print(functools.reduce(lambda x,y: x+y,lst))
     
 def filterteste():
     lista = [i for i in range(101)]
@@ -94,4 +93,4 @@ def switcharoo(d1,d2):
     return dout
 print(switcharoo(d1,d2))
 
-
+print(reduceteste())

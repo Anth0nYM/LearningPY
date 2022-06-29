@@ -1,2 +1,2 @@
 # Learning...
-Não gosto de programar para nada, então estou mantendo esse repositório para commitar pequenos exercícios do meu dia a dia.
+Mantendo esse repositório para commitar pequenos exercícios do meu dia a dia.
